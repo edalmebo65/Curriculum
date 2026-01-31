@@ -1,9 +1,96 @@
-﻿<!DOCTYPE html>
-<html lang='es'>
-<head><meta charset='UTF-8'><title>Portal Edgar Mesa</title></head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edgar Alberto Mesa Borda - Portafolio Profesional</title>
+    <style>
+        :root { --primary: #003366; --secondary: #00509d; --accent: #ffc300; --text: #333; --light: #f4f4f9; }
+        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text); background: var(--light); margin: 0; padding: 0; }
+        .container { max-width: 1000px; margin: 20px auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        header { border-bottom: 4px solid var(--primary); padding-bottom: 20px; margin-bottom: 30px; text-align: center; }
+        h1 { color: var(--primary); margin: 0; font-size: 2.5em; text-transform: uppercase; }
+        .links { margin-top: 15px; }
+        .links a { text-decoration: none; color: var(--secondary); font-weight: bold; margin: 0 15px; border-bottom: 2px solid transparent; transition: 0.3s; }
+        .links a:hover { border-bottom: 2px solid var(--accent); }
+        
+        section { margin-bottom: 40px; }
+        h2 { color: var(--primary); border-left: 5px solid var(--accent); padding-left: 15px; margin-bottom: 20px; }
+        
+        .project-card { background: #eef2f7; padding: 25px; border-radius: 8px; border-top: 4px solid var(--primary); }
+        .cert-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        .cert-item { background: #fff; border: 1px solid #ddd; padding: 15px; border-radius: 6px; transition: transform 0.2s; }
+        .cert-item:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .cert-link { color: var(--secondary); text-decoration: none; font-size: 0.9em; font-weight: bold; display: block; margin-top: 10px; }
+        
+        .skill-tag { display: inline-block; background: var(--primary); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.85em; margin: 5px; }
+    </style>
+</head>
 <body>
-    <h1>Edgar Alberto Mesa Borda</h1>
-    <p>Ingeniero Electrónico - Experto en IA y Web3</p>
-    <a href='certificados/Java University - Udemy.jpg'>Ver Certificado Java</a>
+
+<div class="container">
+    <header>
+        <h1>Edgar Alberto Mesa Borda</h1>
+        <p><strong>Ingeniero Electrónico | Especialista en Web3, IA & Ciberseguridad</strong></p>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/edgar-mesa-1b1bbb237" target="_blank">LinkedIn</a>
+            <a href="https://github.com/edalmebo65" target="_blank">GitHub Principal</a>
+            <a href="mailto:edalmebo65@yahoo.com.ar">Contacto</a>
+        </div>
+    </header>
+
+    <section id="trading">
+        <h2>Desarrollo Reciente: Trading & Blockchain</h2>
+        <div class="project-card">
+            <h3>Orcabot DeepSeek (Oct 2025 - Ene 2026)</h3>
+            <p>Desarrollo intensivo de un motor de trading algorítmico para <strong>Orca (Solana)</strong>.</p>
+            <div>
+                <span class="skill-tag">Python 3.13</span>
+                <span class="skill-tag">Rust Bridge</span>
+                <span class="skill-tag">Web3</span>
+                <span class="skill-tag">Deep Learning</span>
+            </div>
+            <p>Implementación de lógica de "Riesgo Cero" mediante el análisis de costos operativos vs. rentabilidad en tiempo real y optimización de latencia con Rust.</p>
+            <a href="https://github.com/edalmebo65/orcabot_deepseek" target="_blank" class="cert-link">Ver Repositorio del Proyecto →</a>
+        </div>
+    </section>
+
+    <section id="certificados">
+        <h2>Certificaciones Académicas</h2>
+        <div class="cert-grid">
+            <div class="cert-item">
+                <strong>SENA: HTML y JavaScript</strong>
+                <p>Programación de páginas Web.</p>
+                <a href="certificados/Certificadiones Alberto Mesa_Sena_Html_JavaScript.jpg" target="_blank" class="cert-link">Ver Certificado</a>
+            </div>
+            <div class="cert-item">
+                <strong>Udemy: Java University</strong>
+                <p>De principiante a experto en Java.</p>
+                <a href="certificados/Java University - Udemy.jpg" target="_blank" class="cert-link">Ver Certificado</a>
+            </div>
+            <div class="cert-item">
+                <strong>SENA: Java Objetos</strong>
+                <p>Desarrollo de aplicaciones y manejo de clases.</p>
+                <a href="certificados/Certificadiones Alberto Mesa_Sena_Java_Objetos.jpg" target="_blank" class="cert-link">Ver Certificado</a>
+            </div>
+            <div class="cert-item">
+                <strong>Inglés Discoveries</strong>
+                <p>Certificación Básico III - SENA.</p>
+                <a href="certificados/Certificadiones Alberto Mesa_SenaInglés.jpg" target="_blank" class="cert-link">Ver Certificado</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades de Ingeniería</h2>
+        <p><strong>Lenguajes y Herramientas:</strong> 
+            <span class="skill-tag">Rust</span> <span class="skill-tag">Python</span> <span class="skill-tag">Java 8/EE</span> 
+            <span class="skill-tag">SQL Server</span> <span class="skill-tag">VB.NET</span> <span class="skill-tag">C#</span> 
+            <span class="skill-tag">Machine Learning</span> <span class="skill-tag">Power BI</span>
+        </p>
+        <p><strong>Experiencia Sectorial:</strong> Seguros, Educación (Métricas de Evaluación), Evaluación de Desempeño y Tecnología Informática.</p>
+    </section>
+</div>
+
 </body>
 </html>
