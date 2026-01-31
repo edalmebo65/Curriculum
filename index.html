@@ -12,31 +12,33 @@
             --accent: #ffc107;
             --text: #2c3e50;
             --bg: #f4f7f6;
+            --white: #ffffff;
         }
         body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; }
-        .container { max-width: 1100px; margin: 2rem auto; background: white; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 12px; overflow: hidden; }
+        .container { max-width: 1100px; margin: 2rem auto; background: var(--white); box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 12px; overflow: hidden; }
         
         header { background: linear-gradient(135deg, var(--primary), #003366); color: white; padding: 3rem 2rem; text-align: center; }
         header h1 { margin: 0; font-size: 2.5rem; text-transform: uppercase; letter-spacing: 2px; }
         .contact-info { margin-top: 1.5rem; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
         .contact-info a { color: white; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 5px; transition: 0.3s; }
-        .contact-info a:hover { background: var(--secondary); color: white; }
+        .contact-info a:hover { background: var(--secondary); transform: translateY(-2px); }
 
         .main-content { padding: 2rem 3rem; }
-        h2 { color: var(--primary); border-bottom: 3px solid var(--secondary); display: inline-block; margin-top: 2rem; padding-bottom: 5px; }
+        h2 { color: var(--primary); border-bottom: 3px solid var(--secondary); display: inline-block; margin-top: 2rem; padding-bottom: 5px; text-transform: uppercase; font-size: 1.3rem; }
         
-        /* Grid de Certificados */
-        .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-top: 1.5rem; }
-        .cert-card { background: #fff; border: 1px solid #eee; padding: 15px; border-radius: 8px; text-decoration: none; color: inherit; display: flex; align-items: center; gap: 12px; transition: 0.3s; }
-        .cert-card:hover { border-color: var(--secondary); box-shadow: 0 5px 15px rgba(0,0,0,0.05); transform: translateY(-2px); }
-        .cert-card i { color: var(--secondary); font-size: 1.5rem; }
-        .cert-card div strong { display: block; font-size: 0.95rem; color: var(--primary); }
-        .cert-card div span { font-size: 0.8rem; color: #7f8c8d; }
+        /* Grid de Certificados Optimizado */
+        .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin-top: 1.5rem; }
+        .cert-card { background: var(--white); border: 1px solid #eee; padding: 15px; border-radius: 8px; text-decoration: none; color: inherit; display: flex; align-items: center; gap: 12px; transition: 0.3s; border-left: 4px solid var(--primary); }
+        .cert-card:hover { border-color: var(--secondary); box-shadow: 0 5px 15px rgba(0,0,0,0.08); transform: translateY(-3px); }
+        .cert-card i { color: var(--secondary); font-size: 1.6rem; min-width: 30px; text-align: center; }
+        .cert-card div strong { display: block; font-size: 0.9rem; color: var(--primary); line-height: 1.2; }
+        .cert-card div span { font-size: 0.75rem; color: #7f8c8d; text-transform: uppercase; font-weight: 600; }
 
-        .tech-list { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; }
-        .tech-list li { background: var(--primary); color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.85rem; }
+        .tech-list { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; }
+        .tech-list li { background: #e9ecef; color: var(--primary); padding: 5px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; border-bottom: 2px solid #ced4da; }
 
-        footer { background: #f8f9fa; text-align: center; padding: 2rem; font-size: 0.9rem; border-top: 1px solid #eee; }
+        footer { background: #1a1a1a; color: white; text-align: center; padding: 2.5rem; font-size: 0.9rem; margin-top: 2rem; }
+        footer a { color: var(--accent); text-decoration: none; }
     </style>
 </head>
 <body>
@@ -44,79 +46,80 @@
 <div class="container">
     <header>
         <h1>Edgar Alberto Mesa Borda</h1>
-        <p style="font-size: 1.2rem; opacity: 0.9;">Ingeniero Senior | Experto en IA, Blockchain & Web3</p>
+        <p style="font-size: 1.2rem; opacity: 0.9;">Ingeniero Senior Expert | IA, Blockchain & Data Science</p>
         <div class="contact-info">
             <a href="tel:+573155493640"><i class="fas fa-phone"></i> +57 315 549 3640</a>
             <a href="https://wa.me/573155493640" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-            <a href="mailto:edalmebo65@gmail.com"><i class="fas fa-envelope"></i> Enviar Correo</a>
+            <a href="mailto:edalmebo65@gmail.com"><i class="fas fa-envelope"></i> edalmebo65@gmail.com</a>
             <a href="https://www.linkedin.com/in/edgar-mesa-1b1bbb237" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://github.com/edalmebo65" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://github.com/edalmebo65" target="_blank"><i class="fab fa-github"></i> Proyectos</a>
         </div>
     </header>
 
     <div class="main-content">
         <section>
             <h2>Perfil Profesional</h2>
-            <p>Ingeniero con más de 20 años de trayectoria, especializado en el desarrollo de software de alta precisión, **Trading Algorítmico** y soluciones basadas en **Inteligencia Artificial**. Experto en la integración de arquitecturas Python/Rust y protocolos Web3 (Solana/Orca). Comprometido con la norma de "Riesgo Cero" y la excelencia técnica.</p>
+            <p>Ingeniero con más de 20 años de experiencia técnica, especializado en la convergencia de tecnologías emergentes. Experto en **Trading Algorítmico**, arquitectura **Web3** y despliegue de modelos de **Inteligencia Artificial**. Trayectoria sólida en el desarrollo de software a medida, aplicando normas de "Riesgo Cero" y optimización avanzada de recursos bajo entornos Python y Rust.</p>
         </section>
 
         <section>
-            <h2>Habilidades Clave</h2>
+            <h2>Stack Tecnológico Especializado</h2>
             <ul class="tech-list">
-                <li>IA Generativa</li><li>Machine Learning</li><li>Deep Learning</li><li>Blockchain Web3</li>
-                <li>Python 3.13</li><li>Rust Bridge</li><li>SQL MySQL 8.0</li><li>Java Expert</li>
+                <li>IA Generativa</li><li>Machine Learning</li><li>Deep Learning</li><li>Data Science</li>
+                <li>Solana Web3</li><li>Python 3.13</li><li>Rust Bridges</li><li>SQL MySQL 8.0</li><li>Java Senior</li>
             </ul>
         </section>
 
         <section>
-            <h2>Portafolio de Certificaciones (13)</h2>
+            <h2>Certificaciones de Formación y Trayectoria</h2>
             <div class="cert-grid">
-                <a href="https://github.com/edalmebo65/Curriculum/blob/main/certificados/Certificacion_MachineLearning%20y%20Data%20Science.pdf" class="cert-card" target="_blank">
-                    <i class="fas fa-brain"></i><div><strong>ML & Data Science</strong><span>Udemy - 2025</span></div>
+                <a href="certificados/Certificacion_MachineLearning y Data Science.pdf" class="cert-card" target="_blank">
+                    <i class="fas fa-brain"></i><div><strong>Machine Learning y Data Science</strong><span>Udemy - 2025</span></div>
                 </a>
-                <a href="https://github.com/edalmebo65/Curriculum/blob/main/certificados/Certificado%20-%20Mintic%20-%20U%20Distrital%20-%20Ciencia%20de%20datos.pdf" class="cert-card" target="_blank">
-                    <i class="fas fa-database"></i><div><strong>Ciencia de Datos</strong><span>MinTIC / U. Distrital</span></div>
-                </a>
-                <a href="https://github.com/edalmebo65/Curriculum/blob/main/certificados/Certificate%20-Mintic%20-U%20Distrital%20-Inteligencia%20Artificial.pdf" class="cert-card" target="_blank">
+                <a href="certificados/Certificate -Mintic -U Distrital -Inteligencia Artificial.pdf" class="cert-card" target="_blank">
                     <i class="fas fa-robot"></i><div><strong>Inteligencia Artificial</strong><span>MinTIC / U. Distrital</span></div>
                 </a>
-                <a href="https://github.com/edalmebo65/Curriculum/blob/main/certificados/Eidos%20Global%20Microsoft%20-%20Generación%20IA.pdf" class="cert-card" target="_blank">
-                    <i class="fas fa-microchip"></i><div><strong>Generación IA</strong><span>Microsoft / Eidos</span></div>
+                <a href="certificados/Certificado - Mintic - U Distrital - Ciencia de datos.pdf" class="cert-card" target="_blank">
+                    <i class="fas fa-database"></i><div><strong>Ciencia de Datos</strong><span>MinTIC / U. Distrital</span></div>
                 </a>
-                <a href="https://github.com/edalmebo65/Curriculum/blob/main/certificados/Explore_Emerging_Tech_Badge20241003-7-8k1yld.pdf" class="cert-card" target="_blank">
-                    <i class="fas fa-award"></i><div><strong>Emerging Tech</strong><span>IBM SkillsBuild</span></div>
+                <a href="certificados/Eidos Global Microsoft - Generación IA.pdf" class="cert-card" target="_blank">
+                    <i class="fas fa-microchip"></i><div><strong>Generación IA Generativa</strong><span>Microsoft / Eidos</span></div>
                 </a>
-                <a href="https://github.com/edalmebo65/Curriculum/blob/main/certificados/Certificado_JAVA.pdf" class="cert-card" target="_blank">
-                    <i class="fab fa-java"></i><div><strong>Java Senior</strong><span>SENA / Udemy</span></div>
+                <a href="certificados/Explore_Emerging_Tech_Badge20241003-7-8k1yld.pdf" class="cert-card" target="_blank">
+                    <i class="fas fa-award"></i><div><strong>Explore Emerging Tech</strong><span>IBM SkillsBuild</span></div>
                 </a>
-                <a href="https://github.com/edalmebo65/Curriculum/blob/main/certificados/Certificado_Programacion.pdf" class="cert-card" target="_blank">
-                    <i class="fas fa-code"></i><div><strong>Programación Software</strong><span>SENA (+100h)</span></div>
+                <a href="certificados/Certificado_Trading_Algoritmico_froGames.png" class="cert-card" target="_blank">
+                    <i class="fas fa-chart-line"></i><div><strong>Trading Algorítmico</strong><span>froGames</span></div>
                 </a>
-                <a href="https://github.com/edalmebo65/Curriculum/blob/main/certificados/Certificado_Ingles.pdf" class="cert-card" target="_blank">
-                    <i class="fas fa-language"></i><div><strong>Inglés Intermedio</strong><span>SENA</span></div>
+                <a href="certificados/certificado_learning_heroes.- Crypto.pdf" class="cert-card" target="_blank">
+                    <i class="fas fa-coins"></i><div><strong>Crypto & Blockchain</strong><span>Learning Heroes</span></div>
                 </a>
-                <a href="https://github.com/edalmebo65/Curriculum/blob/main/certificados/Certificado_Trading_Python.pdf" class="cert-card" target="_blank">
-                    <i class="fas fa-chart-line"></i><div><strong>Trading con Python</strong><span>froGames</span></div>
+                <a href="certificados/Java University - Udemy.jpg" class="cert-card" target="_blank">
+                    <i class="fab fa-java"></i><div><strong>Java University Expert</strong><span>Udemy</span></div>
                 </a>
-                <a href="https://github.com/edalmebo65/Curriculum/blob/main/certificados/Certificado_Desarrollo_Web.pdf" class="cert-card" target="_blank">
-                    <i class="fas fa-globe"></i><div><strong>Desarrollo Web</strong><span>SENA</span></div>
+
+                <a href="certificados/Certificadiones Alberto Mesa_Sena_Java_Objetos.jpg" class="cert-card" target="_blank">
+                    <i class="fas fa-cube"></i><div><strong>Java Orientado a Objetos</strong><span>SENA</span></div>
                 </a>
-                <a href="https://github.com/edalmebo65/Curriculum/blob/main/certificados/Certificado_Metricas.pdf" class="cert-card" target="_blank">
-                    <i class="fas fa-poll"></i><div><strong>Métricas de Evaluación</strong><span>Especialización</span></div>
+                <a href="certificados/Certificadiones Alberto Mesa_Sena_Html_JavaScript.jpg" class="cert-card" target="_blank">
+                    <i class="fas fa-file-code"></i><div><strong>HTML & JavaScript</strong><span>SENA</span></div>
                 </a>
-                <a href="https://github.com/edalmebo65/Curriculum/blob/main/certificados/Certificado_Ciberseguridad.pdf" class="cert-card" target="_blank">
-                    <i class="fas fa-shield-alt"></i><div><strong>Ciberseguridad</strong><span>Web3 Focus</span></div>
+                <a href="certificados/Certificadiones Alberto Mesa_SenaElectrónica.jpg" class="cert-card" target="_blank">
+                    <i class="fas fa-bolt"></i><div><strong>Mantenimiento Electrónico</strong><span>SENA</span></div>
                 </a>
-                <a href="https://github.com/edalmebo65/Curriculum/blob/main/certificados/Certificado_SQL.pdf" class="cert-card" target="_blank">
-                    <i class="fas fa-server"></i><div><strong>Gestión SQL 8.0</strong><span>Experto</span></div>
+                <a href="certificados/Certificadiones Alberto Mesa_SenaInglés.jpg" class="cert-card" target="_blank">
+                    <i class="fas fa-language"></i><div><strong>Inglés Técnico</strong><span>SENA</span></div>
+                </a>
+                <a href="certificados/Programacion de Software - SENA.pdf" class="cert-card" target="_blank">
+                    <i class="fas fa-laptop-code"></i><div><strong>Programación de Software</strong><span>SENA (+100h)</span></div>
                 </a>
             </div>
         </section>
     </div>
 
     <footer>
-        <p><strong>Edgar Alberto Mesa Borda</strong> | Colombia 2026</p>
-        <p>Proyectos activos: <a href="https://github.com/edalmebo65/orcabot_deepseek">Orcabot Deepseek</a></p>
+        <p><strong>© 2026 Edgar Alberto Mesa Borda</strong></p>
+        <p>Proyectos en Desarrollo: <a href="https://github.com/edalmebo65/orcabot_deepseek">Orcabot Deepseek (Web3 Trading)</a></p>
     </footer>
 </div>
 
