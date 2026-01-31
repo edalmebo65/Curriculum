@@ -3,110 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae - Ingeniero Experto en Web3 & IA</title>
+    <title>CV Edgar Alberto Mesa Borda - Senior Tech Expert</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f4f7f6;
+        :root {
+            --primary: #1a2a6c;
+            --secondary: #b21f1f;
+            --accent: #fdbb2d;
+            --text: #2c3e50;
+            --bg: #f8f9fa;
         }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-            border-radius: 8px 8px 0 0;
-        }
-        .container {
-            background: white;
-            padding: 2rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            border-radius: 0 0 8px 8px;
-        }
-        h1 { margin: 0; font-size: 2.5rem; }
-        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; margin-top: 1.5rem; }
-        .section { margin-bottom: 20px; }
-        .tech-stack { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; }
-        .tech-stack li { background: #3498db; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; }
-        .certificate-link { 
-            display: block; 
-            padding: 10px; 
-            margin: 5px 0; 
-            background: #ecf0f1; 
-            text-decoration: none; 
-            color: #2980b9; 
-            border-radius: 4px; 
-            transition: background 0.3s;
-        }
-        .certificate-link:hover { background: #d6dbdf; }
-        footer { text-align: center; margin-top: 2rem; font-size: 0.8rem; color: #7f8c8d; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 0; }
+        .container { max-width: 1000px; margin: 2rem auto; background: white; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 12px; overflow: hidden; }
+        
+        /* Header con diseño moderno */
+        header { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 3rem 2rem; text-align: center; }
+        header h1 { margin: 0; font-size: 2.8rem; letter-spacing: -1px; }
+        .contact-info { margin-top: 1.5rem; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .contact-info a { color: white; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; }
+        .contact-info a:hover { color: var(--accent); }
+
+        .main-content { padding: 2rem 3rem; }
+        h2 { color: var(--primary); border-left: 5px solid var(--secondary); padding-left: 15px; margin-top: 2rem; font-size: 1.5rem; text-transform: uppercase; }
+        
+        /* Grid para Certificaciones */
+        .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin-top: 1rem; }
+        .cert-card { background: #fff; border: 1px solid #e1e8ed; padding: 15px; border-radius: 8px; transition: transform 0.2s; position: relative; }
+        .cert-card:hover { transform: translateY(-5px); border-color: var(--secondary); }
+        .cert-card strong { display: block; color: var(--primary); }
+        .cert-card span { font-size: 0.85rem; color: #666; }
+        .badge { position: absolute; top: 10px; right: 10px; font-size: 1.2rem; color: var(--accent); }
+
+        .tech-stack { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; }
+        .tech-stack li { background: #e9ecef; color: var(--primary); padding: 6px 14px; border-radius: 4px; font-size: 0.9rem; font-weight: 600; }
+
+        footer { background: #2c3e50; color: white; text-align: center; padding: 1.5rem; font-size: 0.9rem; }
+        
+        @media (max-width: 768px) { .main-content { padding: 1.5rem; } header h1 { font-size: 2rem; } }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Ingeniero Experto en Blockchain, IA & Ciberseguridad</h1>
-    <p>Más de 20 años de experiencia en Ingeniería y Desarrollo de Software</p>
-</header>
-
 <div class="container">
-    <div class="section">
-        <h2>Perfil Profesional</h2>
-        <p>Especialista en Web3 y trading algorítmico con más de 10 años de estudio en mercados financieros. Experto en el desarrollo de soluciones robustas utilizando Python, Rust y modelos avanzados de Inteligencia Artificial (Deep Learning). Amplia trayectoria en la creación de software a medida para sectores de seguros, educación y métricas de evaluación.</p>
+    <header>
+        <h1>EDGAR ALBERTO MESA BORDA</h1>
+        <p style="font-size: 1.2rem; opacity: 0.9;">Ingeniero Senior | Experto en IA, Blockchain & Trading Algorítmico</p>
+        <div class="contact-info">
+            <a href="tel:+573155493640"><i class="fas fa-phone"></i> +57 315 549 3640</a>
+            <a href="https://wa.me/573155493640" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="mailto:edalmebo65@gmail.com"><i class="fas fa-envelope"></i> edalmebo65@gmail.com</a>
+            <a href="https://github.com/edalmebo65" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <section>
+            <h2>Perfil Profesional</h2>
+            <p>Ingeniero con más de 20 años de experiencia técnica, especializado en la convergencia de tecnologías emergentes. Experto en el desarrollo de <strong>Trading Algorítmico</strong>, arquitectura <strong>Web3</strong> y despliegue de modelos de <strong>Inteligencia Artificial</strong>. Trayectoria comprobada en la creación de software crítico para sectores de seguros y educación, aplicando siempre normas de "Riesgo Cero" y optimización de recursos.</p>
+        </section>
+
+        <section>
+            <h2>Habilidades de Élite</h2>
+            <ul class="tech-stack">
+                <li>IA Generativa (Microsoft/Eidos)</li>
+                <li>Ciencia de Datos (MinTIC/U. Distrital)</li>
+                <li>Machine Learning con Python</li>
+                <li>Trading Algorítmico de la A a la Z</li>
+                <li>Desarrollo en Java & JavaScript</li>
+                <li>Estructuras Rust Bridge</li>
+                <li>Solana Blockchain & Orca DEX</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Certificaciones Destacadas</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <i class="fas fa-microchip badge"></i>
+                    <strong>Ciencia de Datos (50 Horas)</strong>
+                    <span>MinTIC & Univ. Distrital | Mayo 2024</span>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-brain badge"></i>
+                    <strong>Inteligencia Artificial (50 Horas)</strong>
+                    <span>MinTIC & Univ. Distrital | Mayo 2024</span>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-robot badge"></i>
+                    <strong>Generación IA: ABC de la IA Generativa</strong>
+                    <span>Microsoft & Eidos Global | Julio 2025</span>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-chart-line badge"></i>
+                    <strong>Trading Algorítmico con Python</strong>
+                    <span>froGames</span>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-database badge"></i>
+                    <strong>Machine Learning y Data Science</strong>
+                    <span>Santiago Hernández - Udemy | Feb 2025</span>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-server badge"></i>
+                    <strong>Explore Emerging Tech</strong>
+                    <span>IBM SkillsBuild | Oct 2024</span>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-code badge"></i>
+                    <strong>Programación Páginas Web (HTML & JS)</strong>
+                    <span>SENA Regional Tolima | Nov 2010</span>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-coffee badge"></i>
+                    <strong>Java University: Beginner to Expert</strong>
+                    <span>Global Mentoring - Udemy | Ene 2019</span>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-language badge"></i>
+                    <strong>English Discoveries - Básico III</strong>
+                    <span>SENA Regional Antioquia | Ene 2009</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Proyectos de Ingeniería</h2>
+            <p><strong>Orcabot Deepseek:</strong> Desarrollo integral de un bot de minería y trading sobre el protocolo Orca (Solana). Implementación en Python 3.13 con puente en Rust para máxima velocidad de ejecución y gestión de liquidez SOL/USDC con seguridad criptográfica.</p>
+        </section>
     </div>
 
-    <div class="section">
-        <h2>Habilidades Técnicas (Stack)</h2>
-        <ul class="tech-stack">
-            <li>Python 3.13.11</li>
-            <li>Rust (Bridges & Core)</li>
-            <li>Solana / Orca DEX</li>
-            <li>Machine Learning & K-NN</li>
-            <li>Deep Learning</li>
-            <li>MySQL 8.0</li>
-            <li>Ciberseguridad & Web3</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Proyectos Destacados</h2>
-        <ul>
-            <li><strong>Orcabot Deepseek:</strong> Bot de trading de alto rendimiento operando sobre la plataforma Orca.so, optimizado para operatividad con riesgo cero y gestión eficiente de fondos en SOL/USDC.</li>
-            <li><strong>Sistemas de Métricas:</strong> Desarrollo de software especializado para colegios públicos/privados y empresas de evaluación de desempeño.</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Certificaciones y Formación (SENA)</h2>
-        <p>Formación técnica oficial y certificada que respalda mi trayectoria en programación e idiomas:</p>
-        
-        <a href="https://github.com/edalmebo65/Curriculum/blob/main/certificados/Certificado_JAVA.pdf" class="certificate-link" target="_blank">
-            📄 Desarrollo de Aplicaciones con JAVA - SENA
-        </a>
-        <a href="https://github.com/edalmebo65/Curriculum/blob/main/certificados/Certificado_Programacion.pdf" class="certificate-link" target="_blank">
-            📄 Programación de Software (+100 Horas) - SENA
-        </a>
-        <a href="https://github.com/edalmebo65/Curriculum/blob/main/certificados/Certificado_Ingles.pdf" class="certificate-link" target="_blank">
-            📄 Inglés Intermedio - SENA
-        </a>
-        
-        <p><small>*Para ver todos los documentos, visite la <a href="https://github.com/edalmebo65/Curriculum/tree/main/certificados">carpeta de certificados</a> en GitHub.</small></p>
-    </div>
-
-    <div class="section">
-        <h2>Contacto y Repositorios</h2>
-        <p>GitHub Proyectos: <a href="https://github.com/edalmebo65/orcabot_deepseek" target="_blank">github.com/edalmebo65/orcabot_deepseek</a></p>
-        <p>GitHub CV: <a href="https://github.com/edalmebo65/Curriculum" target="_blank">github.com/edalmebo65/Curriculum</a></p>
-    </div>
+    <footer>
+        <p>Este documento es una versión digital interactiva. Para verificar certificaciones, contacte directamente vía WhatsApp.</p>
+    </footer>
 </div>
-
-<footer>
-    <p>&copy; 2026 - Ingeniero de Software - Especialista en Tecnologías Convergentes</p>
-</footer>
 
 </body>
 </html>
