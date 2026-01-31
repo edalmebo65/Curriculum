@@ -9,25 +9,27 @@
         body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--light); color: var(--text); line-height: 1.6; margin: 0; padding: 0; }
         .container { max-width: 1000px; margin: 40px auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
         header { text-align: center; border-bottom: 4px solid var(--navy); padding-bottom: 30px; margin-bottom: 30px; }
-        h1 { color: var(--navy); font-size: 2.5em; margin: 0; text-transform: uppercase; }
-        .subtitle { color: var(--blue); font-weight: 600; font-size: 1.2em; margin-top: 5px; }
+        h1 { color: var(--navy); font-size: 2.2em; margin: 0; text-transform: uppercase; }
+        .subtitle { color: var(--blue); font-weight: 600; font-size: 1.1em; margin-top: 5px; }
         
-        .contact-bar { display: flex; justify-content: center; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
-        .btn { padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .contact-bar { display: flex; justify-content: center; gap: 15px; margin-top: 20px; flex-wrap: wrap; }
+        .btn { padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: 0.3s; font-size: 0.9em; }
         .btn-primary { background: var(--navy); color: white; }
         .btn-primary:hover { background: var(--gold); color: var(--navy); }
-        .btn-whatsapp { background: #25d366; color: white; }
+        .btn-linkedin { background: #0077b5; color: white; }
 
         section { margin-bottom: 40px; }
-        h2 { color: var(--navy); border-left: 6px solid var(--gold); padding-left: 15px; text-transform: uppercase; font-size: 1.4em; }
+        h2 { color: var(--navy); border-left: 6px solid var(--gold); padding-left: 15px; text-transform: uppercase; font-size: 1.3em; margin-bottom: 20px; }
         
-        .exp-item { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #eee; }
-        .exp-header { display: flex; justify-content: space-between; font-weight: bold; color: var(--blue); }
-        .tech-stack { font-size: 0.9em; color: #666; font-style: italic; margin-top: 5px; }
+        .exp-item { margin-bottom: 25px; padding: 15px; border-radius: 8px; background: #fcfcfc; border: 1px dashed #ddd; }
+        .exp-header { display: flex; justify-content: space-between; font-weight: bold; color: var(--blue); flex-wrap: wrap; }
+        .tech-stack { font-size: 0.85em; color: #555; font-style: italic; margin-top: 8px; background: #eee; padding: 5px 10px; border-radius: 4px; display: inline-block; }
 
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .card { border: 1px solid #ddd; padding: 20px; border-radius: 8px; background: #fff; }
-        .cert-btn { display: inline-block; margin-top: 10px; color: var(--blue); font-weight: bold; text-decoration: underline; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { border: 1px solid #ddd; padding: 20px; border-radius: 8px; background: #fff; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); border-color: var(--gold); }
+        .cert-btn { display: inline-block; margin-top: 12px; color: var(--blue); font-weight: bold; text-decoration: none; border: 1px solid var(--blue); padding: 5px 10px; border-radius: 4px; font-size: 0.8em; }
+        .cert-btn:hover { background: var(--blue); color: white; }
     </style>
 </head>
 <body>
@@ -37,54 +39,45 @@
         <h1>Edgar Alberto Mesa Borda</h1>
         <p class="subtitle">Ingeniero Electr車nico | Experto en Blockchain, IA y Ciberseguridad</p>
         <div class="contact-bar">
-            <a href="mailto:edalmebo65@gmail.com" class="btn btn-primary">?? Contactar por Email</a>
-            <a href="https://wa.me/573155493640" class="btn btn-whatsapp">?? WhatsApp</a>
-            <a href="https://github.com/edalmebo65" class="btn btn-primary">?? GitHub</a>
+            <a href="mailto:edalmebo@gmail.com" class="btn btn-primary">?? Email</a>
+            <a href="https://www.linkedin.com/in/edgar-mesa-1b1bbb237/details/certifications/" class="btn btn-linkedin" target="_blank">?? Certificados LinkedIn</a>
+            <a href="https://github.com/edalmebo65/orcabot_deepseek" class="btn btn-primary" target="_blank">?? GitHub Proyecto</a>
         </div>
     </header>
 
     <section>
-        <h2>Perfil Profesional</h2>
-        <p>Ingeniero Senior con m芍s de 20 a?os de trayectoria en el ciclo de vida de desarrollo de software (SDLC). Especialista en la creaci車n de motores algor赤tmicos de alta precisi車n y arquitecturas h赤bridas (Python/Rust). Experto en la implementaci車n de est芍ndares de <strong>Riesgo Cero</strong> para sistemas financieros y trading en la red de Solana.</p>
-    </section>
-
-    <section>
-        <h2>Experiencia Destacada</h2>
+        <h2>Experiencia Senior Destacada</h2>
         
         <div class="exp-item">
-            <div class="exp-header"><span>Fundador & Lead Engineer - Sentinel-DeFi (Orcabot)</span> <span>2025 - Actual</span></div>
-            <p>Desarrollo de motor de trading algor赤tmico en Solana utilizando Python 3.13 y Rust Bridge. Implementaci車n de m谷tricas actuariales para asegurar operatividad de capital.</p>
-            <div class="tech-stack">Tech: Rust, Python, Solana Web3, Deep Learning.</div>
+            <div class="exp-header"><span>Fundador & Lead Engineer - Orcabot DeepSeek</span> <span>2025 - Actual</span></div>
+            <p>Arquitectura de trading algor赤tmico de alto rendimiento con bridge h赤brido. Enfoque en gesti車n de "Riesgo Cero" para la red de Solana.</p>
+            <span class="tech-stack">Rust, Python 3.13, Web3, Solana, Deep Learning</span>
         </div>
 
         <div class="exp-item">
-            <div class="exp-header"><span>Ingeniero de Desarrollo - Sistran / Finleco</span> <span>Trayectoria Senior</span></div>
-            <p>Liderazgo en el desarrollo de software para el sector seguros y financiero. Creaci車n de sistemas de evaluaci車n de desempe?o y m谷tricas de precisi車n.</p>
-            <div class="tech-stack">Tech: Java, SQL Server, SyBase, VBA, .NET.</div>
-        </div>
-
-        <div class="exp-item">
-            <div class="exp-header"><span>Director de Sistemas / Consultor IT</span> <span>Gesti車n Institucional</span></div>
-            <p>Direcci車n de departamentos de inform芍tica, gesti車n de infraestructura cr赤tica y aseguramiento de protocolos de ciberseguridad.</p>
+            <div class="exp-header"><span>Ingeniero de Desarrollo Senior - Sistran / Finleco</span> <span>Trayectoria Consolidada</span></div>
+            <p>Liderazgo en soluciones de software para el sector seguros y financiero. Especialista en m谷tricas de precisi車n y evaluaci車n de desempe?o institucional.</p>
+            <span class="tech-stack">Java, SQL Server, SyBase, .NET, Business Intelligence</span>
         </div>
     </section>
 
     <section>
-        <h2>Certificaciones T谷cnicas</h2>
+        <h2>Certificaciones de Vanguardia (Harvard, IBM, MINTIC)</h2>
         <div class="grid">
             <div class="card">
-                <strong>Harvard / IBM / MINTIC</strong>
-                <p>Ciencia de Datos e Inteligencia Artificial (2024-2025).</p>
+                <strong>Harvard University - CS50P</strong>
+                <p>Programaci車n avanzada con Python y Ciencia de Datos.</p>
+                <a href="https://www.linkedin.com/in/edgar-mesa-1b1bbb237/details/certifications/" class="cert-btn" target="_blank">Verificar en LinkedIn</a>
             </div>
             <div class="card">
-                <strong>Java University - Udemy</strong>
-                <p>Especializaci車n en arquitectura Java.</p>
-                <a href="certificados/Java University - Udemy.jpg" class="cert-btn" target="_blank">Ver Diploma</a>
+                <strong>IBM - Data Science Professional</strong>
+                <p>Especializaci車n en modelos predictivos y Machine Learning aplicado.</p>
+                <a href="https://www.linkedin.com/in/edgar-mesa-1b1bbb237/details/certifications/" class="cert-btn" target="_blank">Verificar en LinkedIn</a>
             </div>
             <div class="card">
-                <strong>SENA - Programaci車n</strong>
-                <p>HTML, JavaScript y Objetos (100+ horas).</p>
-                <a href="certificados/Certificadiones Alberto Mesa_Sena_Html_JavaScript.jpg" class="cert-btn" target="_blank">Ver Certificado</a>
+                <strong>MINTIC 2024 - Colombia Potencia Digital</strong>
+                <p>Formaci車n t谷cnica avanzada en Inteligencia Artificial y Datos.</p>
+                <a href="https://www.linkedin.com/in/edgar-mesa-1b1bbb237/details/certifications/" class="cert-btn" target="_blank">Verificar en LinkedIn</a>
             </div>
         </div>
     </section>
